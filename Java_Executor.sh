@@ -1,6 +1,6 @@
 #!/bin/sh
 : '
-	Java Executor-Executes Java files with simplicity
+	Java_Executor-Linux-Executes Java files with simplicity
     Copyright (C) 2020  Garvit Joshi
 
     This program is free software; you can redistribute it and/or modify
