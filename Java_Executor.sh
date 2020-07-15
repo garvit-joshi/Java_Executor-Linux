@@ -31,15 +31,15 @@ do
 	done <"$filename"
 	python3 Filename_class.py
 	filename1="Input.txt"
-	echo "-------------------------------"
+	echo "--------------------------------"
 	echo "OUTPUT:"
-	echo "-------------------------------"
+	echo "--------------------------------"
 	while IFS= read -r line
 	do
 	        java "$line"
 	done <"$filename1"
-	echo "-------------------------------"
-	echo "-------------------------------"
+	echo "--------------------------------"
+	echo "--------------------------------"
 	read -p "Press [Enter] key to continue..." readEnterKey
 	clear
 done
