@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 : '
 	Java_Executor-Linux-Executes Java files with simplicity
     Copyright (C) 2020  Garvit Joshi
