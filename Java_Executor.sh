@@ -18,9 +18,9 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 	Git-Hub Link: https://github.com/garvit-joshi/Java_Executor-Linux
 '
-echo WELCOME TO EXECUTOR
-echo Garvit Joshi\(garvitjoshi9@gmail.com\)
-echo USER:$USERNAME
+echo -e "\t\tWELCOME TO EXECUTOR"
+echo -e "\t\t\tGarvit Joshi(garvitjoshi9@gmail.com)"
+echo -e "\t\t\t\tUSER:$USERNAME"
 while true
 do
 	python3 Filename_java.py
