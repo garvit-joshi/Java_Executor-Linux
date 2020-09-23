@@ -1,0 +1,21 @@
+name: PythonTest
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: Ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2.3.2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8.5'
+        architecture: 'x64'
+    - name: build
+      run: |
+        python --version
+        python -m pip install --upgrade pip
+        pip install pylint
+        pylint Filename_class.py
+        pylint Filename_java.py

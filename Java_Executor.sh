@@ -23,13 +23,13 @@ echo -e "\t\t\tGarvit Joshi(garvitjoshi9@gmail.com)"
 echo -e "\t\t\t\tUSER:$USERNAME"
 while true
 do
-	python3 Filename_java.py
+	python3 filename_java.py
 	filename="Input.txt"
 	while IFS= read -r line
 	do
 	        javac "$line"
 	done <"$filename"
-	python3 Filename_class.py
+	python3 filename_class.py
 	filename1="Input.txt"
 	echo "--------------------------------"
 	echo "OUTPUT:"
