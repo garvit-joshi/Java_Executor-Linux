@@ -1,1 +1,4 @@
 Input.txt
+*.java
+*.class
+/.vscode
