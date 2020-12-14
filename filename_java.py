@@ -21,6 +21,7 @@ import glob
 COUNT=0
 ifile=open("Input.txt","w")
 SERIAL_NO=1
+WORD_LENGTH=10
 for file in glob.glob("*.java"):
     if COUNT%2==0:
         print(SERIAL_NO,".",file,end="")
@@ -32,17 +33,25 @@ for file in glob.glob("*.java"):
     COUNT = COUNT + 1
 print("")
 FLAG=1
-while FLAG==1:
-    FILE_NAME=int(input("Enter The File No. You Want To Execute:"))
+FILE_NAME=-1
+while FLAG in (1,2):
+    FLAG=1
+    try:
+        FILE_NAME=int(input("Enter The File No. You Want To Execute:"))
+    except ValueError:
+        print("Oops!  \nThat was no valid number.  \nTry again...")
+        FLAG=2
     SERIAL_NO=1
-    for file in glob.glob("*.java"):
-        if SERIAL_NO==FILE_NAME:
-            FLAG=0
-            FILE_NAME=file
-            break
-        SERIAL_NO = SERIAL_NO + 1
+    if FLAG!=2:
+        for file in glob.glob("*.java"):
+            if SERIAL_NO==FILE_NAME:
+                FLAG=0
+                FILE_NAME=file
+                break
+            SERIAL_NO = SERIAL_NO + 1
+            FLAG=1
     if FLAG==1:
-        print("File Not Found!!\nPlease Enter Again:")
+        print("File Not Found!!\nPlease Try Again...")
 ifile.write(FILE_NAME)
 ifile.write("\n")
 ifile.close()
