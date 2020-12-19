@@ -16,7 +16,7 @@
     with this program; if not, write to the Free Software Foundation, Inc.,
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 '''
-#GitHub Link:https://github.com/garvit-joshi/Java_Executor-Windows
+#GitHub Link:https://github.com/garvit-joshi/Java_Executor-Linux
 import glob
 COUNT=0
 ifile=open("Input.txt","w")
