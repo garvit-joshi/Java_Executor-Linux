@@ -30,14 +30,14 @@ do
 	        javac "$line"
 	done <"$filename"
 	python3 filename_class.py
-	filename1="Input.txt"
+	filename="Input.txt"
 	echo "--------------------------------"
 	echo "OUTPUT:"
 	echo "--------------------------------"
 	while IFS= read -r line
 	do
 	        java "$line"
-	done <"$filename1"
+	done <"$filename"
 	echo "--------------------------------"
 	echo "--------------------------------"
 	read -p "Press [Enter] key to continue..." readEnterKey
